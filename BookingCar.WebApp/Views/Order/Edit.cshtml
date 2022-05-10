@@ -1,0 +1,64 @@
+﻿@model BookingCar.Core.Domain.Orders.Order;
+
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+@section Header {
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~js/moment-with-locales.min.js"></script>
+<script src="~js/bootstrap.min.js"></script>
+<script src="~js/bootstrap-datetimepicker.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+<script src="~/js/Order/GetByPrefix.js"></script>
+<script src="~/js/Order/GetByPrefix.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+}
+
+<form asp-controller="Order" asp-action="Update" data-ajax="true" data-ng-model="replace"
+                                                             data-ajax-update="#response" method="post">
+    <div id="form" style="padding: 20px; margin: 60px;">
+         <div class="form-group">
+             <div class="col-xs-3">
+             <label for="inputDate">Выберите дату:</label>
+             <input type="datetime-local" asp-for="DateTimeDeparture" class="form-control"  style="width:50%" />
+             <span style="color:red" asp-validation-for="DateTimeDeparture" />
+             <br />
+              </div>
+         </div>
+
+         <div class="form-group">
+             <label for="inputDate">Введите имя водителя:</label>
+             <input id="prefix"  list="drivers" oninput="GetByPrefix(document.getElementById('prefix').value)" value=@Model.DriverName class="form-control" asp-for="DriverName" style="width:50%">
+             <span style="color:red" asp-validation-for="DriverName" />
+             <datalist id="drivers"></datalist>
+         </div><br />
+
+         <div class="form-group">
+             <label for="inputDate">Комментарий:</label>
+             <textarea type="text" class="form-control" rows="3" asp-for="Comment" value=@Model.Comment style="width:70%"></textarea>
+         </div><br />
+
+         <button type="submit" name="id" value=@Model.Id class="btn btn-primary">Изменить</button>
+    
+        
+</form>
+
+<form asp-controller="Order" asp-action="DeleteOrder" >
+    <br />
+    @if (User.IsInRole("Admin"))
+        {
+         <button type="submit" name="id" value=@Model.Id class="btn btn-danger">Удалить</button>
+        }
+</form>
+
+<br />
+<div id = "response" ></div>
+</div>
+ <script>
+     $('#date').on('input', function() {
+         $('#date').val($('date').val() + ' ' + $('#time').val();
+     })
+ </script>

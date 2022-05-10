@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\smokeatvck\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\smokeatvck\\.nuget\\packages"
+    ]
+  }
+}

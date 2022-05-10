@@ -1,0 +1,39 @@
+﻿@model List<BookingCar.Core.Domain.Orders.Order>;
+
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+
+
+
+<form method="post" action="~/Account/Profile/Edit">
+
+<table class="table table-hover" style="margin-top:35px">
+  <thead class="thead-light">
+     <tr>
+      <th scope="col">#</th>
+      <th scope="col">Дата отправления</th>
+      <th scope="col">Имя водителя</th>
+      <th scope="col">Комментарий</th>
+      <th scope="col"><a></a></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+            @if(@Model != null)
+            {
+                 @for(int i = 1; i< @Model.Count()+1; i ++)
+                 {
+            <tr>
+                <th scope="row">@i</th>
+                <td name="DateTimeDeparture">@Model[i-1].DateTimeDeparture</td>
+                <td>@Model[i-1].DriverName</td>
+                <td>@Model[i-1].Comment</td>
+                <td><button name="id" value=@Model[i-1].Id type="submit">Редактировать</button></td>
+            </tr>
+                 }
+            }
+  </tbody>
+</table>
+</form>

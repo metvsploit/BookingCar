@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.WebApp\\BookingCar.WebApp.csproj": {}
+  },
+  "projects": {
+    "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj",
+        "projectName": "BookingCar.Core",
+        "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj",
+        "packagesPath": "C:\\Users\\smokeatvck\\.nuget\\packages\\",
+        "outputPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smokeatvck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebPages": {
+              "target": "Package",
+              "version": "[3.2.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj",
+        "projectName": "BookingCar.DataAccess",
+        "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\smokeatvck\\.nuget\\packages\\",
+        "outputPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smokeatvck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj": {
+                "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\BookingCar.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\BookingCar.Service.csproj",
+        "projectName": "BookingCar.Service",
+        "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\BookingCar.Service.csproj",
+        "packagesPath": "C:\\Users\\smokeatvck\\.nuget\\packages\\",
+        "outputPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smokeatvck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj": {
+                "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Core\\BookingCar.Core.csproj"
+              },
+              "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj": {
+                "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.WebApp\\BookingCar.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.WebApp\\BookingCar.WebApp.csproj",
+        "projectName": "BookingCar.WebApp",
+        "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.WebApp\\BookingCar.WebApp.csproj",
+        "packagesPath": "C:\\Users\\smokeatvck\\.nuget\\packages\\",
+        "outputPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smokeatvck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj": {
+                "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.DataAccess\\BookingCar.DataAccess.csproj"
+              },
+              "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\BookingCar.Service.csproj": {
+                "projectPath": "D:\\[OTUS, Алексей Ягур] Csh ASP.NET Core разработчик  [Части 1-4 из 5] (2021)\\BookingCar\\BookingCar.Service\\BookingCar.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

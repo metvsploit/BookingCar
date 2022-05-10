@@ -1,0 +1,42 @@
+﻿@model BookingCar.Core.Domain.ViewModels.UserViewModel;
+
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+@section Header {
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~js/moment-with-locales.min.js"></script>
+<script src="~js/bootstrap.min.js"></script>
+<script src="~js/bootstrap-datetimepicker.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/Order/GetByPrefix.js"></script>
+}
+
+
+<form asp-controller="Account" asp-action="Register">
+    <div id="form" style="padding: 20px; margin: 60px;">
+
+        <div class="form-group">
+            <label for="inputDate">Введите имя:</label>
+            <input class="form-control" asp-for="Name" style="width:50%">
+             <span style="color:red" asp-validation-for="Name" />
+        </div>
+
+         <div class="form-group">
+             <label for="inputDate">Введите адрес почты:</label>
+             <input class="form-control" asp-for="Email" style="width:50%">
+             <span style="color:red" asp-validation-for="Email" />
+         </div>
+
+         <div class="form-group">
+             <label for="inputDate">Введите пароль:</label>
+             <input class="form-control" asp-for="Password" style="width:50%">
+             <span style="color:red" asp-validation-for="Password" />
+         </div>
+         <br />
+         <button type="submit" class="btn btn-primary">Создать</button>
+
+    </div>
+</form>

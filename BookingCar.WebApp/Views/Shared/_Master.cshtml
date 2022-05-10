@@ -1,0 +1,79 @@
+﻿  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BookingCar.WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/js/Order/GetByPrefix.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    @RenderSection("Header",false)
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4">
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                            <span>@User.Identity.Name</span>
+                        </a>
+
+                      @if (User.IsInRole("User"))
+                            {
+                                <a href="/Account/Profile" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i><span> Мой профиль</span>
+                                </a>
+                                <a href="/Account/Profile/MyOrders" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i><span> Мои заявки</span>
+                                </a>
+                                <a href="/Account/Profile/CreateOrder" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-plus" aria-hidden="true"></i><span> Создать заявку</span>
+                                </a>
+                                <a href="/Account/Logout" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fas fa-times" aria-hidden="true"></i>
+                                    <span> Выход</span>
+                                </a>
+                            }
+
+                      @if(User.IsInRole("Admin"))
+                            {
+                                <a href="/Account/Profile" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i><span> Мой профиль</span>
+                                </a>
+                                <a href="/Account/Profile/Orders" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i><span> Заявки</span>
+                                </a>
+                                <a href="/Account/AllUsers" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-users" aria-hidden="true"></i><span> Пользователи</span>
+                                </a>
+                                <a href="/Account/Register" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fa fa-plus" aria-hidden="true"></i><span> Добавить пользователя</span>
+                                </a>
+                                <a href="/Account/Logout" class="list-group-item list-group-item-action py-2 ripple">
+                                    <i class="fas fa-times" aria-hidden="true"></i>
+                                    <span> Выход</span>
+                                </a>
+                            }
+
+                     </div>
+                 </div>
+             </nav>
+         </div>
+
+         <div class="col">
+             @RenderBody()
+         </div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿@model BookingCar.Core.Domain.ViewModels.UserViewModel;
+
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+<div class="alert alert-light" role="alert" style="margin-top: 100px">
+    <h3>Личные данные</h3>
+    <hr />
+    <p>Имя: @Model.Name</p>
+    <p>Адрес почты: @Model.Email</p>
+</div>
