@@ -31,7 +31,7 @@ namespace BookingCar.WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Database=training;Username=postgres;Password=12321325"));
+            services.AddDbContext<DataContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Database=training;Username=postgres;Password=228"));
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IDriverRepository, DriverRepository>();
